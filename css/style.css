@@ -1,0 +1,413 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'PT Sans', sans-serif;
+}
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+a,a:hover {
+    text-decoration: none;
+}
+
+/*******************Medua Query starts*****************/
+
+ /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .header-section .banner {
+        padding: 0px 0px;
+        width: 100%;
+        margin-top: -44px;
+    }
+
+    .banner .text-inner {
+        text-align: center;
+    }
+    
+    .banner .text-inner h1 {
+        font-size: 28px !important;
+        font-weight: 700;
+        margin-bottom: 25px !important;
+    }
+
+    .banner .text-inner p {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 11px;
+    }
+
+    .header-section .banner .img-inner {
+        text-align: center;
+        margin: 0px;
+        padding: 20px 0px;
+    }
+
+    .feature-section .feature-inner {
+        text-align: center;
+    }
+
+    .feature-section .title h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px ;
+    }
+    
+    .feature-section .title p {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 7px;
+    }
+
+    .feature-section .media .fa {
+        font-size: 40px;
+    }
+
+    .footer-section .title h1 {
+        font-size: 28px !important;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px ;
+        color: #fcdb00;
+    }
+
+    .footer-section .title p {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 17px;
+    }
+
+    .footer-section .form-group {
+        width: 100% !important;
+    }
+
+    .footer-section .form-group .form-control {
+        padding: 0px 8px;
+    }
+    
+  }
+
+  
+   /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .banner .text-inner {
+        text-align: center;
+    }
+
+    .banner .text-inner p {
+        color: #555555;
+        margin-bottom: 40px;
+    }
+
+    .feature-section .feature-inner {
+        text-align: center;
+    }
+
+    .feature-section .media .fa {
+        font-size: 40px;
+    }
+
+    .footer-section .title h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px ;
+        color: #fcdb00;
+    }
+
+    .footer-section .title p {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 13px;
+    }
+
+    
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .banner .text-inner h1 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 20px;
+
+    }
+    
+    .banner .text-inner p {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+
+    .feature-section .feature-inner {
+        text-align: center;
+    }
+
+    .feature-section .media .media-body h5 {
+        color: #000;
+        font-size: 19px !important;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .feature-section .media .media-body {
+        color: #555555;
+        margin-bottom: 40px;
+        font-size: 10px;
+    }
+
+    .feature-section .media .fa {
+        font-size: 40px;
+    }
+    
+    .footer-section .title h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 10px ;
+        color: #fcdb00;
+    }
+
+    .footer-section .title p {
+        color: #555555;
+        margin-bottom: 40px;
+    }
+  }
+ 
+  /*******************Medua Query ends*****************/
+
+/******************* header section css starts ****************/
+.header-section {
+    width: 100%;
+    background: #fcdb00;
+    padding: 30px 0px;
+}
+
+.header-section .bg-light {
+    background-color: transparent !important;
+}
+
+.header-section .navbar-light .navbar-nav .nav-link {
+    margin: 0px 0px 0px 25px;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.header-section .banner {
+    padding: 40px 0px;
+    width: 100%;
+}
+
+.banner .text-inner {
+    padding: 40px 0px;
+}
+
+.banner .text-inner h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.banner .text-inner h6 {
+    margin-bottom: 20px;
+}
+
+.banner .text-inner p {
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.banner .img-inner {
+    text-align: center;
+    margin: 0px 0px 0px 25px;
+}
+
+.banner .img-inner img {
+    border-radius: 30px;
+}
+
+
+/******************* header section css ends ****************/
+
+/******************* feature section css starts ****************/
+.feature-section {
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.feature-section .title {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.feature-section .title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px ;
+}
+
+.feature-section .title p {
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.feature-section .media {
+    margin: 15px 0px;
+}
+
+.feature-section .media .fa {
+    font-size: 40px;
+}
+
+.feature-section .media .media-body {
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.feature-section .media .media-body h5 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/******************* feature section css ends ****************/
+
+/******************* footer section css starts ****************/
+.footer-section {
+    width: 100%;
+    padding: 60px 0px;
+    background: #010101;
+}
+
+.footer-section .title {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.footer-section .title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px ;
+    color: #fcdb00;
+}
+
+.footer-section .title p {
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.footer-section .form-inline {
+    width: 100%;
+    padding: 0px 40px;
+    margin-bottom: 20px;
+}
+
+.footer-section .form-group {
+    width: 54%;
+}
+
+.footer-section .form-group .form-control {
+    width: 100% !important;
+}
+
+.footer-section .btn-primary {
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #fcdb00;
+    color: #010101;
+    border: 1px solid #fcdb00;
+    transition: 1s ease-in-out;
+}
+
+.footer-section .btn-primary:hover, .footer-section .btn-primary:focus {
+    background: transparent;
+    color: #fcdb00;
+    border: 1px solid #fcdb00
+}
+
+.footer-section .icons {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.footer-section .icons li {
+    display: inline-block;
+    list-style: none;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.footer-section .icons li .fa {
+    padding: 4px 8px;
+    background: #fcdb00;
+    border: 1px solid #fcdb00;
+    transition: 1s;
+}
+
+.footer-section .icons li .fa:hover {
+    background: transparent;
+    color: #fcdb00;
+    border: 1px solid #fcdb00;
+}
+
+.footer-section .footer-bottom {
+    padding: 40px 0px;
+}
+
+.footer-section .footer-bottom p {
+    color: #bfbfbf;
+}
+
+.footer-section .footer-bottom p a {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+.footer-section .footer-bottom p a:hover {
+    color: #fcdb00;
+}
+
+.footer-section .footer-bottom li {
+    list-style: none;
+    color: #bfbfbf;
+}
+
+.footer-section .footer-bottom li:hover {
+    color: #fcdb00;
+}
+
+
+/******************* footer section css ends ****************/
