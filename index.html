@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-     <!-- Font-awesome CSS -->
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-      <!-- Style CSS -->
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- PT Sans bold CSS -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -26,39 +29,98 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
+    <script src="js/stickUp.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/animationCounter.js"></script>
+             
+
+    <script type="text/javascript">
+        //initiating jQuery
+        jQuery(function($) {
+          $(document).ready( function() {
+            //enabling stickUp on the '.navbar-wrapper' class
+            $('.navbar-wrapper').stickUp();
+          });
+        });
+
+      </script>
+    
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+    $('.block').ready(function(){
+        $('.fb').animationCounter({
+          start: 0,
+          step: 1,
+          delay:2,
+          end: 10000
+        });
+        
+    });
+    </script>
+
+<script type="text/javascript">
+    $('.block').ready(function(){
+        $('.heart').animationCounter({
+          start: 0,
+          step: 1,
+          delay:2,
+          end: 4000
+        });
+        
+    });
+    </script>
+
+<script type="text/javascript">
+    $('.block').ready(function(){
+        $('.visit').animationCounter({
+          start: 0,
+          step: 1,
+          delay:2,
+          end: 2000
+        });
+        
+    });
+    </script>
 
     <!-- header section start -->
     <header class="header-section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-wrapper">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./images/tinyone-1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-              
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="#">Support</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
-                      </li>
-                  </ul>
+                        </li>
+                    </ul>
                 </div>
-              </nav>
-        </div>
+            </div>    
+        </nav>
+        
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
                         <div class="text-inner">
                             <h1>Inspire your inspiration</h1>
                             <h6>Simple to use for your app, products<br>showcase and your inspiration</h6>
@@ -66,7 +128,7 @@
                             <img src="./images/social.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay=".2s">
                         <div class="img-inner">
                             <img src="./images/phone.jpg" alt="" class="img-fluid">
                         </div>
@@ -81,7 +143,7 @@
     <section class="feature-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
                     <div class="title">
                         <h1>Tinyone features</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus<br> tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
@@ -89,7 +151,7 @@
                 </div>
             </div>
             <div class="feature-inner">
-                <div class="row">
+                <div class="row wow fadeInRight" data-wow-duration="2s" data-wow-delay=".2s">
                     <div class="col-md-4">
                         <div class="media">
                             <i class="fa fa-tablet mr-3" alt="..."></i> 
@@ -119,7 +181,7 @@
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
                     <div class="col-md-4">
                         <div class="media">
                             <i class="fa fa-code mr-3" alt="..."></i> 
@@ -149,6 +211,45 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block">
+                        <p><span class="lnr lnr-heart"></span></p>
+                        <p class="counter-wrapper">
+                            <span class="fb"></span>
+                        </p>
+                        <p class="text-block">like</p>
+                        <p>
+                            <i class="fa fa-thumbs-up"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <p><span class="lnr lnr-heart"></span></p>
+                        <p class="counter-wrapper">
+                            <span class="heart"></span>
+                        </p>
+                        <p class="text-block">love</p>
+                        <p>
+                            <i class="fa fa-heart"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <p><span class="lnr lnr-heart"></span></p>
+                        <p class="counter-wrapper">
+                            <span class="visit"></span>
+                        </p>
+                        <p class="text-block">visit</p>
+                        <p>
+                            <i class="fa fa-eye"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             
             
         </div>
